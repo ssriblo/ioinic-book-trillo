@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">trillo</string>
+    <string name="title_activity_main">trillo</string>
+    <string name="package_name">com.devdactic.trillo</string>
+    <string name="custom_url_scheme">com.devdactic.trillo</string>
+    <string name="server_client_id">504378660230-h3vfbq5tkvls3kspa0np6s65tikd6phe.apps.googleusercontent.com</string>
+</resources>

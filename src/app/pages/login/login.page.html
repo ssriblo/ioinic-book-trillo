@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="close()" color="primary">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Log In</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-top">
+  <form (ngSubmit)="signIn()" [formGroup]="loginForm">
+    <ion-item lines="inset">
+      <ion-input placeholder="Email address" type="email" formControlName="email" autofocus="true" clearInput="true">
+      </ion-input>
+    </ion-item>
+
+    <!-- Only display after email input -->
+    <ion-item lines="inset"
+      *ngIf="!(loginForm.get('email').hasError('required') || loginForm.get('email').hasError('email'))">
+      <ion-input placeholder="Password" type="password" formControlName="password" clearInput="true"></ion-input>
+    </ion-item>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="10">
+        <ion-button expand="block" type="submit" [fill]="loginForm.controls.email.value != '' ? 'solid' : 'outline'"
+          [color]="loginForm.controls.email.value != '' ? 'success': 'medium'"
+          [disabled]="!loginForm.valid">
+          Log In</ion-button>
+      </ion-col>
+
+      <!-- Our custom forward navigation -->
+      <ion-col size="12">
+        <ion-nav-link router-direction="forward" [component]="resetPwPage">
+          <ion-button expand="block" size="small" type="button" fill="clear" color="primary">
+            Forgot your password?</ion-button>
+        </ion-nav-link>
+      </ion-col>
+
+      <!-- Social Login buttons -->
+      <ion-col size="10">
+        <ion-button expand="block" type="button" (click)="openGoogleSignup()" color="dark" fill="outline">
+          <ion-icon name="logo-google" slot="start"></ion-icon>
+          Sign in with Google
+        </ion-button>
+        <ion-button expand="block" type="button" (click)="openAppleSignup()" color="dark" fill="outline">
+          <ion-icon name="logo-apple" slot="start"></ion-icon>
+          Sign in with Apple
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

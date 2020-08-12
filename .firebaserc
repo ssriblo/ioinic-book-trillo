@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "trillo-ionic-book": {
+      "hosting": {
+        "app": [
+          "trillo-ionic-book"
+        ]
+      }
+    }
+  }
+}

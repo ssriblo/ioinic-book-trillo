@@ -1,0 +1,19 @@
+{
+  "appId": "com.devdactic.trillo",
+  "appName": "trillo",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    },
+    "GoogleAuth": {
+      "scopes": ["profile", "email"],
+      "serverClientId": 
+        "504378660230-h3vfbq5tkvls3kspa0np6s65tikd6phe.apps.googleusercontent.com",
+      "forceCodeForRefreshToken": true
+      }
+  },
+  "cordova": {}
+}

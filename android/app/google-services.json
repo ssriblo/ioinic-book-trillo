@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "244889291620",
+    "firebase_url": "https://trillo-ionic-book.firebaseio.com",
+    "project_id": "trillo-ionic-book",
+    "storage_bucket": "trillo-ionic-book.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244889291620:android:30848f1f58164d8510c871",
+        "android_client_info": {
+          "package_name": "com.devdactic.trillo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244889291620-hc3o5m5mj97o87tnpkc9f4hurat3jqns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoJUXCiFgCDnfCb2I1GbBQCct4oeN6580"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244889291620-hc3o5m5mj97o87tnpkc9f4hurat3jqns.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
