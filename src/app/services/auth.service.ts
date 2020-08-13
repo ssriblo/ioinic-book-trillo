@@ -2,15 +2,13 @@ import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Plugins } from '@capacitor/core';
-
+const { SignInWithApple } = Plugins;
 import '@codetrix-studio/capacitor-google-auth';
 
 import { auth } from 'firebase/app';
 import 'firebase/auth';
 
 import { AlertController } from '@ionic/angular';
-const { SignInWithApple } = Plugins;
-
 
 export interface User {
   uid: string;
