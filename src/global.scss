@@ -45,3 +45,8 @@
         margin-bottom: 0px !important;
     }
 }
+
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
