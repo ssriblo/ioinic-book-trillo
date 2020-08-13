@@ -29,6 +29,14 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/tabs/tabs.module').then((m) => m.TabsPageModule),
   },
+  {
+    path: 'board-add',
+    loadChildren: () => import('./pages/board-add/board-add.module').then( m => m.BoardAddPageModule)
+  },
+  {
+    path: 'board-color-select',
+    loadChildren: () => import('./pages/board-color-select/board-color-select.module').then( m => m.BoardColorSelectPageModule)
+  },
 ];
 
 @NgModule({
